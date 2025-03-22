@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huo</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="hearts-container"></div>
+    
+    <div class="divOne">
+        <div class="input-container">
+            <div class="divTwo">
+                <div class="container">
+                    <input type="number" id="inputNum" name="input" placeholder="02172005?" readonly>
+                    <div class="numeric-keypad">
+                        <button class="key" onclick="addToInput(1)">1</button>
+                        <button class="key" onclick="addToInput(2)">2</button>
+                        <button class="key" onclick="addToInput(3)">3</button>
+                        <button class="key" onclick="addToInput(4)">4</button>
+                        <button class="key" onclick="addToInput(5)">5</button>
+                        <button class="key" onclick="addToInput(6)">6</button>
+                        <button class="key" onclick="addToInput(7)">7</button>
+                        <button class="key" onclick="addToInput(8)">8</button>
+                        <button class="key" onclick="addToInput(9)">9</button>
+                        <button class="key delete" onclick="deleteLast()">⌫</button>
+                        <button class="key" onclick="addToInput(0)">0</button>
+                        <button style="font-size: 14;" class="key clear" onclick="submitInput()">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="divThree">
+                <img src="Assets/pngtree-hand-drawn-vector-burger-logo-on-black-background-png-image_4821820.png" alt="Pic" class="centered-image">
+            </div>
+        </div>
+        <pre>Hi Love Open Mo Nga
+ (Clue? Bday mo)</pre>     
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
