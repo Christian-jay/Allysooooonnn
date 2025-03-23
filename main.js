@@ -12,8 +12,8 @@ function createHeart() {
     
 }
 
-// Generate hearts every 150ms
-setInterval(createHeart, 150);
+// Generate hearts every 350ms
+setInterval(createHeart, 350);
 
 function addToInput(num) {
     document.getElementById("inputNum").value += num;
