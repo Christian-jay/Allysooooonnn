@@ -1,7 +1,7 @@
 function createHeart() {
     const heart = document.createElement("div");
     heart.classList.add("heart");
-    heart.innerHTML = "❤️"; // You can change to 💖, 💕, 💗 for variety
+    heart.innerHTML = "💗"; // You can change to 💖, 💕, 💗 for variety
 
     // Random horizontal position
     heart.style.left = Math.random() * 100 + "vw";
@@ -12,7 +12,7 @@ function createHeart() {
     
 }
 
-// Generate hearts every 500ms
+// Generate hearts every 150ms
 setInterval(createHeart, 150);
 
 function addToInput(num) {
@@ -20,7 +20,19 @@ function addToInput(num) {
 }
 
 function submitInput() {
-    document.getElementById("inputNum").value = "";
+    let inputField = document.getElementById("inputNum");
+    let inputtedVal = inputField.value;
+
+    if (inputtedVal !== "02172005") {
+        inputField.value = "Wrong!";
+
+        // Remove "Wrong!" text after 2 seconds
+        setTimeout(() => {
+            inputField.value = "";
+        }, 1000);
+    } else {
+        window.location.href = "index2.html"
+    }
 }
 
 function deleteLast() {

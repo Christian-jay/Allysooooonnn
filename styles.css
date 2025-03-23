@@ -197,3 +197,116 @@ input[type=number] {
 .delete {
     background: #FFA07A;
 }
+
+body {
+    background-color: #FFC0CB;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.divOne {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    box-shadow: 5px 10px 20px rgba(252, 108, 133, 0.3);
+    border-radius: 25px;
+    background: linear-gradient(135deg, #FFD1DC, #FFB6C1);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #8A4F7D;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divThree img {
+    max-width: 100%;
+    height: auto;
+}
+
+.numeric-keypad {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.key {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FF7990, #EFA1B4);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(255, 182, 193, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.hearts-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/* On larger screens, place them side by side */
+@media (min-width: 768px) {
+    .input-container {
+        flex-direction: row; /* Align side by side */
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .divThree {
+        margin-right: 20px; /* Adds extra space between image and keypad */
+    }
+}
+
+.divTwo {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.divThree {
+width: 220px;
+height: 230px;
+border-radius: 15%;
+background: linear-gradient(135deg, #FFB6C1, #FFC0CB);
+box-shadow: 3px 6px 15px rgba(252, 108, 133, 0.3);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.clear {
+background: #FF4D4D;
+}
+
+.delete {
+background: #FFA07A;
+}
