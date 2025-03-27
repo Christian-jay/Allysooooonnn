@@ -16,5 +16,4 @@ function typeText(elementId, delay = 100) {
 }
 
 // Start animation for both texts
-typeText("sleepText", 60); // Adjust the speed as needed
 typeText("secondSleepText", 60);

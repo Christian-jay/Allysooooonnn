@@ -98,7 +98,7 @@ html, body {
     background-color: #e0c8c8;
     background-image: url('Assets/In Love Cat GIF.gif');
     background-repeat: no-repeat;
-    background-size: 100% 100%; /* Ensures the GIF fills the container */
+    background-size: 95% 95%; /* Ensures the GIF fills the container */
     background-position: center; /* Centers the GIF */
     width: 50vw; 
     height: 50vw;
