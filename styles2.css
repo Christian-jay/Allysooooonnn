@@ -96,8 +96,12 @@ html, body {
 .second-picture-container {
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
     background-color: #e0c8c8;
+    background-image: url('Assets/In Love Cat GIF.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Ensures the GIF fills the container */
+    background-position: center; /* Centers the GIF */
     width: 50vw; 
-    height: 50vw; 
+    height: 50vw;
     max-width: 500px;
     max-height: 500px;
     border-radius: 10%;
