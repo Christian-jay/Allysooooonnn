@@ -9,7 +9,7 @@ sleepTextDiv.textContent = "";
 function typeText(index) {
     if (index < sleepText.length) {
         sleepTextDiv.textContent += sleepText[index]; // Add letter one by one
-        setTimeout(() => typeText(index + 1), 60); // Adjust speed (100ms per letter)
+        setTimeout(() => typeText(index + 1), 1); // Adjust speed (100ms per letter)
     }
 }
 
