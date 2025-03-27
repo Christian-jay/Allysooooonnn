@@ -2,38 +2,34 @@
 
 body {
     background-image: url('Assets/body-bg.jpg');
-    background-size: cover; /* Ensures full-screen coverage */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    overflow: hidden; /* Prevents scrollbars */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FFC0CB;
+    overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevents scrolling */
     width: 100%;
     height: 100%;
     max-width: 100vw;
     max-height: 100vh;
-    -webkit-overflow-scrolling: touch; /* Ensures smooth iOS behavior */
+    -webkit-overflow-scrolling: touch;
 }
 
-
-/* Floating Hearts Animation */
 @keyframes floatHearts {
-    0% {
-        transform: translateY(100vh) translateX(0);
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(50vh) translateX(30px);
-    }
-    100% {
-        transform: translateY(-10vh) translateX(-30px);
-        opacity: 0;
-    }
+    0% { transform: translateY(100vh) translateX(0); opacity: 1; }
+    50% { transform: translateY(50vh) translateX(30px); }
+    100% { transform: translateY(-10vh) translateX(-30px); opacity: 0; }
 }
 
 .hearts-container {
@@ -42,14 +38,14 @@ html, body {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 1; /* Ensures hearts stay behind everything */
+    z-index: 1;
     overflow: hidden;
     pointer-events: none;
 }
 
 .heart {
     position: absolute;
-    bottom: -50px; /* Start below the screen */
+    bottom: -50px;
     font-size: 24px;
     color: #FF69B4;
     animation: floatHearts linear infinite;
@@ -57,51 +53,43 @@ html, body {
 }
 
 .divOne {
-    background-image: url('Assets/divOne-bg.jpg');
-    background-size: cover; /* Ensures full-screen coverage */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    width: 500px;
-    margin: 50px auto;
-    box-shadow: 5px 10px 20px rgba(252, 108, 133, 0.3);
-    border-radius: 25px;
-    /* background: linear-gradient(135deg, #FFD1DC, #FFB6C1); */
+    width: 90%;
+    max-width: 500px;
     padding: 30px;
-    text-align: left;
-    font-family: "Poppins", sans-serif;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 209, 220, 0.8);
+    border-radius: 25px;
+    text-align: center;
     color: #8A4F7D;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 1px;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: left; /* Center align */
-  }
+    flex-direction: column;
+    align-items: center;
+}
 
 .divTwo {
-    width: 248px;
-    margin-left: 250;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .divThree {
     width: 220px;
-    margin-top: -330;
     height: 230px;
     border-radius: 15%;
     background: linear-gradient(135deg, #FFB6C1, #FFC0CB);
-    box-shadow: 3px 6px 15px rgba(252, 108, 133, 0.3);
+    box-shadow: 3px 6px 15px rgba(250, 74, 104, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
-.centered-image {
-    height: 100px;  /* Fixed missing 'px' */
-    width: 200px;   /* Fixed missing 'px' */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.divThree img {
+    max-width: 90%;
+    height: 190px;
+    border-radius: 25px;
 }
 
 input {
@@ -109,34 +97,23 @@ input {
     height: 45px;
     padding: 10px 15px;
     font-size: 18px;
-    font-family: "Poppins", sans-serif;
     border: none;
-    border-radius: 25px; /* Smooth rounded edges */
+    border-radius: 25px;
     background: linear-gradient(135deg, #FF9A9E, #f38394);
-    color: #fff; /* White text */
+    color: white;
     text-align: center;
     outline: none;
-    box-shadow: 0px 5px 15px rgba(255, 182, 193, 0.5); /* Soft glowing shadow */
+    box-shadow: 0px 5px 15px rgba(255, 182, 193, 0.5);
     transition: all 0.4s ease-in-out;
 }
 
-/* Change style when input is focused */
-input:focus {
-    background: linear-gradient(135deg, #FF8FA3, #F7B7C3); /* Soft Rosy Pink */
-    box-shadow: 0px 10px 25px rgba(255, 182, 193, 0.9); /* Bright glow */
-    transform: scale(1.02); /* Tiny enlargement */
-    filter: brightness(1.15); /* 🌟 Slight glow effect */
-
+input:focus, input:hover {
+    background: linear-gradient(135deg, #FF8FA3, #F7B7C3);
+    box-shadow: 0px 10px 25px rgba(255, 182, 193, 0.9);
+    transform: scale(1.02);
+    filter: brightness(1.15);
 }
 
-input:hover {
-    background: linear-gradient(135deg, #FF7990, #EFA1B4); /* Blush & Rose Pink */
-    box-shadow: 0px 8px 18px rgba(255, 182, 193, 0.7); /* Slightly stronger glow */
-    filter: brightness(1.1); /* ✨ Subtle brightness boost */
-
-}
-
-/* Placeholder text styling */
 input::placeholder {
     color: rgba(255, 255, 255, 0.8);
     font-style: italic;
@@ -155,101 +132,6 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
-}
-
-.container {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    margin-top: 5px;
-}
-
-#inputNum {
-    width: 250px;
-    height: 45px;
-    padding: 10px 15px;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #FF8FA3, #F7B7C3);
-    color: white;
-    outline: none;
-    box-shadow: 0px 5px 15px rgba(255, 182, 193, 0.5);
-}
-
-.numeric-keypad {
-    display: grid;
-    grid-template-columns: repeat(3, 60px);
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.key {
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    background: linear-gradient(135deg, #FF7990, #EFA1B4);
-    color: white;
-    cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(255, 182, 193, 0.5);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Hover and active effect */
-.key:hover {
-    background: linear-gradient(135deg, #FF5A6B, #E48A99);
-    transform: scale(1.05);
-}
-
-.key:active {
-    transform: scale(0.95);
-}
-
-/* Clear and delete button styles */
-.clear {
-    background: #FF4D4D;
-}
-
-.delete {
-    background: #FFA07A;
-}
-
-body {
-    background-color: #FFC0CB;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-
-.divOne {
-    width: 90%;
-    max-width: 500px;
-    padding: 30px;
-    box-shadow: 5px 10px 20px rgba(252, 108, 133, 0.3);
-    border-radius: 25px;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    color: #8A4F7D;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 1px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.divThree img {
-    max-width: 100%;
-    height: 210px;
-    border-radius: 25px;
 }
 
 .numeric-keypad {
@@ -274,49 +156,39 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.input-container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center;
-    gap: 20px;
-    
+.key:hover {
+    background: linear-gradient(135deg, #FF5A6B, #E48A99);
+    transform: scale(1.05);
 }
 
-/* On larger screens, place them side by side */
+.key:active {
+    transform: scale(0.95);
+}
+
+.clear {
+    background: #FF4D4D;
+}
+
+.delete {
+    background: #FFA07A;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 @media (min-width: 768px) {
     .input-container {
-        flex-direction: row; /* Align side by side */
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
 
     .divThree {
-        margin-right: 20px; /* Adds extra space between image and keypad */
+        margin-right: 5px;
     }
-}
-
-.divTwo {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.divThree {
-width: 220px;
-height: 230px;
-border-radius: 15%;
-background: linear-gradient(135deg, #FFB6C1, #FFC0CB);
-box-shadow: 3px 6px 15px rgba(252, 108, 133, 0.3);
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.clear {
-background: #FF4D4D;
-}
-
-.delete {
-background: #FFA07A;
 }
