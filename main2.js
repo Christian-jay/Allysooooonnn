@@ -1,17 +1,20 @@
-// Get the text from the div
-let sleepTextDiv = document.getElementById("sleepText");
-let sleepText = sleepTextDiv.textContent;
+function typeText(elementId, delay = 100) {
+    let textDiv = document.getElementById(elementId);
+    let text = textDiv.textContent;
 
-// Clear the original text
-sleepTextDiv.textContent = "";
+    // Clear the original text
+    textDiv.textContent = "";
 
-// Function to display each letter one by one
-function typeText(index) {
-    if (index < sleepText.length) {
-        sleepTextDiv.textContent += sleepText[index]; // Add letter one by one
-        setTimeout(() => typeText(index + 1), 1); // Adjust speed (100ms per letter)
+    function type(index) {
+        if (index < text.length) {
+            textDiv.textContent += text[index]; // Add letter one by one
+            setTimeout(() => type(index + 1), delay); // Adjust speed
+        }
     }
+
+    type(0);
 }
 
-// Start animation
-typeText(0);
+// Start animation for both texts
+typeText("sleepText", 1); // Adjust the speed as needed
+typeText("secondSleepText", 1);
