@@ -137,6 +137,11 @@ html, body {
         width: 30vw;
         max-width: 450px;
     }
+
+    .second-text {
+        width: 30vw;
+        max-width: 450px;
+    }
 }
 
 /* 📱 For Tablets */
@@ -157,6 +162,11 @@ html, body {
         width: 70vw;
         max-width: 350px;
     }
+
+    .second-text {
+        width: 70vw;
+        max-width: 350px;
+    }
 }
 
 /* 📱 For Mobile Phones */
@@ -174,6 +184,11 @@ html, body {
     }
 
     .text {
+        width: 80vw;
+        max-width: 300px;
+    }
+
+    .second-text {
         width: 80vw;
         max-width: 300px;
     }
