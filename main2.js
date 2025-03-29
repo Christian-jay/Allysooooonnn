@@ -17,3 +17,15 @@ function typeText(elementId, delay = 100) {
 
 // Start animation for both texts
 typeText("secondSleepText", 60);
+
+document.getElementById("click-button").style.display = "none";
+
+        function showStuff() {
+            document.getElementById("click-button").style.display = "inline";
+        }
+
+        function buttonClick() {
+            window.location = "index3.html"
+        }
+
+        setTimeout(showStuff, 30000);//30000

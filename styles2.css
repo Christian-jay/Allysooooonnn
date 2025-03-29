@@ -3,7 +3,7 @@
 body {
     width: 100%;
     height: auto;
-    min-height: 5000px; 
+    min-height: 1650px; 
     background-color: #D4AEAE;
     background-size: cover;
     background-position: center;
@@ -98,7 +98,7 @@ html, body {
     background-color: #e0c8c8;
     background-image: url('Assets/In Love Cat GIF.gif');
     background-repeat: no-repeat;
-    background-size: 95% 95%; /* Ensures the GIF fills the container */
+    background-size: 95% 90%; /* Ensures the GIF fills the container */
     background-position: center; /* Centers the GIF */
     width: 50vw; 
     height: 50vw;
@@ -119,8 +119,42 @@ html, body {
     object-fit: fill; 
 }
 
+button {
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #e9af89, #EFA1B4);
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ee9460, #E48A99);
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
 /* 💻 For Large Screens (Desktops) */
 @media (min-width: 1024px) { 
+    body {
+        width: 100%;
+        height: auto;
+        min-height: 1150px;
+        background-color: #D4AEAE;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start; 
+        padding-top: 10px; 
+    }
+
     .picture-container {
         width: 20vw;  
         height: 20vw;
@@ -175,6 +209,20 @@ html, body {
 
 /* 📱 For Mobile Phones */
 @media (max-width: 480px) {
+    body {
+        width: 100%;
+        height: auto;
+        min-height: 1350px; 
+        background-color: #D4AEAE;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start; 
+        padding-top: 10px; 
+    }
+
     .picture-container {
         margin-top: 30px;
         width: 80vw;
