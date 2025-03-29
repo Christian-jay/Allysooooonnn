@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&family=Quicksand:wght@400;600&display=swap');
 
 body {
-    background-image: url('Assets/body-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #FFC0CB;
+    background-color: #D4AEAE;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -61,7 +60,7 @@ html, body {
     max-width: 500px;
     padding: 30px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 209, 220, 0.5);
+    background: #e0c8c8;
     border-radius: 25px;
     text-align: center;
     color: #8A4F7D;
@@ -83,8 +82,8 @@ html, body {
     width: 220px;
     height: 230px;
     border-radius: 15%;
-    background: linear-gradient(135deg, #FFB6C1, #FFC0CB);
-    box-shadow: 3px 6px 15px rgba(250, 74, 104, 0.3);
+    background: #D4AEAE;
+    box-shadow: 3px 6px 15px #0303034d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,23 +102,23 @@ input {
     font-size: 18px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(135deg, #FF9A9E, #f38394);
+    background: #D4AEAE;
     color: white;
     text-align: center;
     outline: none;
-    box-shadow: 0px 5px 15px rgba(255, 182, 193, 0.5);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     transition: all 0.4s ease-in-out;
 }
 
 input:focus, input:hover {
-    background: linear-gradient(135deg, #FF8FA3, #F7B7C3);
-    box-shadow: 0px 10px 25px rgba(255, 182, 193, 0.9);
+    background: linear-gradient(135deg, #e9af89, #EFA1B4);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
     transform: scale(1.02);
     filter: brightness(1.15);
 }
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(116, 77, 77, 0.8);
     font-style: italic;
     transition: color 0.6s ease-in-out;
 }
@@ -153,15 +152,15 @@ input[type=number] {
     border-radius: 15px;
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(135deg, #FF7990, #EFA1B4);
-    color: white;
+    background: linear-gradient(135deg, #e9af89, #EFA1B4);
+    color: rgb(160, 110, 110);
     cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(255, 182, 193, 0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
 }
 
 .key:hover {
-    background: linear-gradient(135deg, #FF5A6B, #E48A99);
+    background: linear-gradient(135deg, #ee9460, #E48A99);
     transform: scale(1.05);
 }
 
@@ -170,11 +169,13 @@ input[type=number] {
 }
 
 .clear {
+    color: #f5f5f5af;
     background: #FF4D4D;
 }
 
 .delete {
-    background: #FFA07A;
+    color: #0303034d;
+    background: #f8885b;
 }
 
 .input-container {

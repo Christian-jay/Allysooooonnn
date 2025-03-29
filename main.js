@@ -1,7 +1,7 @@
 function createHeart() {
     const heart = document.createElement("div");
     heart.classList.add("heart");
-    heart.innerHTML = "💗"; // You can change to 💖, 💕, 💗 for variety
+    heart.innerHTML = "💓"; // You can change to 💖, 💕, 💗 for variety
 
     // Random horizontal position
     heart.style.left = Math.random() * 100 + "vw";
