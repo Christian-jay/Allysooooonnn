@@ -83,6 +83,7 @@ html, body {
     max-width: 400px; 
     text-align: justify;
     padding: 10px;
+    color: rgba(66, 46, 46, 0.8);
 }
 
 .second-text {
@@ -91,6 +92,7 @@ html, body {
     max-width: 400px; 
     text-align: justify;
     padding: 10px;
+    color: rgba(88, 59, 59, 0.8);
 }
 
 .second-picture-container {
@@ -125,6 +127,7 @@ button {
     font-weight: bold;
     background: linear-gradient(135deg, #e9af89, #EFA1B4);
     cursor: pointer;
+    color: rgba(34, 23, 23, 0.8);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
     border: none;
