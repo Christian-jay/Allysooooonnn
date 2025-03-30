@@ -21,19 +21,19 @@ function addToInput(num) {
 
 function submitInput() {
     let inputField = document.getElementById("inputNum");
-    let inputtedVal = inputField.value;
+    let inputValue = inputField.value;
 
-    if (inputtedVal !== "02172005") {
+    if (inputValue === "02172005") {
+        window.location.href = "index2.html";
+    } else {
         inputField.value = "Wrong!";
 
-        // Remove "Wrong!" text after 2 seconds
         setTimeout(() => {
             inputField.value = "";
         }, 1000);
-    } else {
-        window.location.href = "index2.html"
     }
 }
+
 
 function deleteLast() {
     let input = document.getElementById("inputNum").value;

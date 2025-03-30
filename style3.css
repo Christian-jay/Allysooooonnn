@@ -28,6 +28,28 @@ html, body {
     background-color: #e0c8c8;
     background-position: center;
     align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.gif {
+    width: 80%;
+    max-width: 500px; 
+    height: auto;
+}
+
+.text {
+    display: flex;
+    color: rgb(160, 110, 110);
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 50px;
+    margin-top: auto; 
+    padding-bottom: 20px; 
+    text-align: center;
 }
 
 .buttons {
@@ -38,6 +60,7 @@ html, body {
 }
 
 .buttons  button {
+    color: rgb(82, 61, 61);
     margin-top: 30px;
     padding: 15px 30px;
     font-size: 16px;
@@ -67,19 +90,32 @@ html, body {
 
 @media (min-width: 1024px) {
     .gif-container {
-        width: 20vw;  
-        height: 20vw;
+        width: 80vw;  
+        height: 80vw;
         max-width: 450px;
         max-height: 450px;
-        margin-top: 30px;
+        margin-top: 80px;
+    }
+
+    .gif {
+        margin-top: 30;
+        height: 90%;
+        width: 90%;
     }
 }
 
 @media (max-width: 768px) {
     .gif-container {
-        width: 70vw;
-        height: 70vw;
+        width: 80vw;
+        height: 75vw;
         margin-top: 30px;
+    }
+
+    .gif {
+        margin-top: 30;
+        height: 80%;
+        width: 80%;
+        max-width: 500px;
     }
 }
 
@@ -88,5 +124,10 @@ html, body {
         margin-top: 150px;
         width: 70vw;
         height: 80vw;
+    }
+
+    .gif {
+        width: 80%;
+        max-width: 250px;
     }
 }
