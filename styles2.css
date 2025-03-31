@@ -79,7 +79,7 @@ html, body {
 /* 📝 Text - Always Below */
 .text {
     font-family: 'Edu AU VIC WA NT Guides';
-    font-size: larger;
+    font-size: medium;
     width: 50vw; 
     max-width: 400px; 
     text-align: justify;
@@ -89,7 +89,7 @@ html, body {
 
 .second-text {
     font-family: 'Edu AU VIC WA NT Guides';
-    font-size: larger;
+    font-size: medium;
     width: 50vw; 
     max-width: 400px; 
     text-align: justify;
@@ -217,7 +217,7 @@ button:hover {
     body {
         width: 100%;
         height: auto;
-        min-height: 1200px; 
+        min-height: 1450px; 
         background-color: #D4AEAE;
         background-size: cover;
         background-position: center;
