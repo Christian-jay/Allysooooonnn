@@ -47,10 +47,11 @@ html, body {
     flex-direction: column; 
     align-items: center;
     padding-top: 50px;
-    font-size: 25px;
+    font-size: clamp(16px, 3vw, 25px);
     margin-top: auto; 
     padding-bottom: 20px; 
     text-align: center;
+    max-width: 80%;
 }
 
 .buttons {
@@ -118,6 +119,12 @@ html, body {
         width: 80%;
         max-width: 500px;
     }
+
+    .text {
+        font-size: clamp(14px, 4vw, 20px); /* Slightly smaller text */
+        padding-top: 30px;
+        max-width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -130,5 +137,11 @@ html, body {
     .gif {
         width: 80%;
         max-width: 250px;
+    }
+
+    .text {
+        font-size: clamp(12px, 5vw, 18px);
+        max-width: 95%;
+        padding-bottom: 10px    ;
     }
 }
