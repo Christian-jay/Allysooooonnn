@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="styles3.css">
 </head>
 <body>  
-    <div class="gif-container">
-        <img class="gif" src="Assets\In Love Cat GIF.gif" alt="cat">
+    <div class="gif-container"> 
+        <img id="gifImage" class="gif" src="Assets\Cat GIF.gif" alt="cat">
         <div class="text">
             <h4>Hi Love! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quae lab?</h4>
         </div>
@@ -15,7 +15,9 @@
 
     <div class="buttons" id="clickableButtons">
         <button type="button" onclick="yesButton()">Yes</button>
-        <button type="button" onclick="noButton()">No</button>
+        <button id="noButton" type="button" onclick="moveButton()">No</button>
     </div>
+
+    <script src="main3.js"></script>
 </body>
 </html>
