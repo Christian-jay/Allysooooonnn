@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Edu AU VIC WA NT Guides');
 
 body {
     width: 100%;
@@ -78,7 +78,8 @@ html, body {
 
 /* 📝 Text - Always Below */
 .text {
-    font-family: 'Fredoka One';
+    font-family: 'Edu AU VIC WA NT Guides';
+    font-size: larger;
     width: 50vw; 
     max-width: 400px; 
     text-align: justify;
@@ -87,7 +88,8 @@ html, body {
 }
 
 .second-text {
-    font-family: 'Fredoka One';
+    font-family: 'Edu AU VIC WA NT Guides';
+    font-size: larger;
     width: 50vw; 
     max-width: 400px; 
     text-align: justify;
