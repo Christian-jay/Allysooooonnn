@@ -16,7 +16,7 @@ function typeText(elementId, delay = 100) {
 }
 
 // Start animation for both texts
-typeText("secondSleepText", 60);
+typeText("secondSleepText", 0);
 
 document.getElementById("click-button").style.display = "none";
 
@@ -28,4 +28,4 @@ document.getElementById("click-button").style.display = "none";
             window.location = "index3.html"
         }
 
-        setTimeout(showStuff, 30000);//30000
+        setTimeout(showStuff, 1);//30000

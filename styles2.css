@@ -79,7 +79,7 @@ html, body {
 /* 📝 Text - Always Below */
 .text {
     font-family: 'Edu AU VIC WA NT Guides';
-    font-size: medium;
+    font-size: larger;
     width: 50vw; 
     max-width: 400px; 
     text-align: justify;
@@ -89,7 +89,7 @@ html, body {
 
 .second-text {
     font-family: 'Edu AU VIC WA NT Guides';
-    font-size: medium;
+    font-size: larger;
     width: 50vw; 
     max-width: 400px; 
     text-align: justify;
@@ -100,9 +100,9 @@ html, body {
 .second-picture-container {
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
     background-color: #e0c8c8;
-    background-image: url('Assets/In Love Cat GIF.gif');
+    background-image: url('Assets/IMG_20250403_030150.jpg');
     background-repeat: no-repeat;
-    background-size: 95% 90%; /* Ensures the GIF fills the container */
+    background-size: 85% 90%; /* Ensures the GIF fills the container */
     background-position: center; /* Centers the GIF */
     width: 50vw; 
     height: 50vw;
@@ -149,7 +149,7 @@ button:hover {
     body {
         width: 100%;
         height: auto;
-        min-height: 1150px;
+        min-height: 1380px;
         background-color: #D4AEAE;
         background-size: cover;
         background-position: center;
@@ -189,6 +189,20 @@ button:hover {
 
 /* 📱 For Tablets */
 @media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+        min-height: 1900px; 
+        background-color: #D4AEAE;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start; 
+        padding-top: 10px; 
+    }
+
     .picture-container {
         width: 70vw;
         height: 70vw;
@@ -217,7 +231,7 @@ button:hover {
     body {
         width: 100%;
         height: auto;
-        min-height: 1405px; 
+        min-height: 1750px; 
         background-color: #D4AEAE;
         background-size: cover;
         background-position: center;
